@@ -543,7 +543,7 @@ i[class*="van-type-"] {
   cursor: pointer;
 }
 
-.login-first {
+.login-error {
     color: red;
 }
 
