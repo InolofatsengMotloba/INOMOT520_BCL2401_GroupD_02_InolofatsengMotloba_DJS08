@@ -43,7 +43,7 @@ function App() {
                 <Route path="pricing" element={<HostVanPricing />} />
                 <Route path="photos" element={<HostVanPhotos />} />
               </Route>
-            </Route>
+            </Route> 
           </Route>
 
           <Route path="*" element={<NotFound />} />
