@@ -2,10 +2,14 @@ import React from "react";
 import bgImg from "../assets/images/about-hero.png";
 import { Link } from "react-router-dom";
 
+// About component to render the about page content
 export default function About() {
   return (
     <div className="about-page-container">
+      {/* Background image for the hero section */}
       <img src={bgImg} className="about-hero-image" />
+
+      {/* Main content of the about page */}
       <div className="about-page-content">
         <h1>Don’t squeeze in a sedan when you could relax in a van.</h1>
         <p>
