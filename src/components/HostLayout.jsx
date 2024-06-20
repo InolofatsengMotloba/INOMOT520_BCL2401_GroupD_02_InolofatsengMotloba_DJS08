@@ -1,7 +1,9 @@
 import React from "react";
 import { NavLink, Outlet } from "react-router-dom";
 
+// HostLayout component with a layout of the navigation for host-related pages
 export default function HostLayout() {
+  // Styles to apply to active navigation links
   const activeStyles = {
     fontWeight: "bold",
     textDecoration: "underline",
@@ -10,7 +12,9 @@ export default function HostLayout() {
 
   return (
     <>
+      {/* Navigation bar for the host layout */}
       <nav className="host-nav">
+        {/* Link to the dashboard */}
         <NavLink
           to="."
           end
@@ -19,6 +23,7 @@ export default function HostLayout() {
           Dashboard
         </NavLink>
 
+        {/* Link to the income page */}
         <NavLink
           to="income"
           style={({ isActive }) => (isActive ? activeStyles : null)}
@@ -26,6 +31,7 @@ export default function HostLayout() {
           Income
         </NavLink>
 
+        {/* Link to the vans page */}
         <NavLink
           to="vans"
           style={({ isActive }) => (isActive ? activeStyles : null)}
@@ -33,6 +39,7 @@ export default function HostLayout() {
           Vans
         </NavLink>
 
+        {/* Link to the reviews page */}
         <NavLink
           to="reviews"
           style={({ isActive }) => (isActive ? activeStyles : null)}
@@ -40,6 +47,8 @@ export default function HostLayout() {
           Reviews
         </NavLink>
       </nav>
+
+      {/* Render the matched child route components */}
       <Outlet />
     </>
   );
